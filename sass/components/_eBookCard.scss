@@ -1,0 +1,86 @@
+.eBookCard {
+    text-align: center;
+
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-400);
+    font-family: 'Markazi Text', serif;
+    box-shadow: 0px 0px 15px -5px var(--blue-100);
+
+    direction: rtl;
+    transition: all 100ms ease-in-out;
+max-width: fit-content;
+    border: 2px solid var(--blue-100);
+
+    &:hover {
+        transform: scale(1.2);
+        z-index: 999999;
+    }
+
+    &__thumb {
+        border-radius: inherit;
+        outline: 2px solid var(--blue-100);
+        max-width: 18rem;
+        max-height: 20rem;
+        min-width: 18rem;
+        min-height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: url(../imgs/ebook_thumb.png);
+        background-size: 12rem;
+        background-position:  center;
+        background-repeat: no-repeat;
+      
+        
+    }
+
+    &__body {
+
+        margin: var(--margin-300);
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        &__info {
+            margin-bottom: var(--margin-400);
+
+            &__title {
+                font-size: 1.2rem;
+                // margin-bottom: var(--margin-100);
+            }
+
+            &__description {
+                max-width: 16rem;
+            }
+        }
+
+
+        &__readMore {
+            // margin: 0 var(--margin-300) var(--margin-300) var(--margin-300);
+            text-decoration: none;
+            background-color: var(--blue-100);
+            color: #fff;
+            padding: var(--padding-sm-300) var(--padding-100);
+            border-radius: var(--radius-400);
+            width: 100%;
+
+            &:hover {
+                color: var(--blue-100);
+                outline: 2px solid var(--blue-100);
+                background-color: #fff;
+            }
+
+
+        }
+    }
+
+
+}

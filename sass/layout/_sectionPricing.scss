@@ -1,0 +1,27 @@
+.sectionPricing {
+    width: 100%;
+    // background-color: red;
+    padding-left: var(--padding-100);
+    padding-right: var(--padding-100);
+
+    &__box {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-gap: var(--gap-100);
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        width: 100%;
+        max-width: var(--section-w100);
+
+        &> {
+            [class="pricingCard"] {
+                // background-color: red;
+                grid-column: span 1;
+            }
+            [class="pricingCardLand"] {
+                // background-color: red;
+                grid-column: span 3;
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.contactForm {
+    background-color: var(--nutral-400);
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: var(--radius-400);
+    font-family: 'Markazi Text', serif;
+    box-shadow: 0px 0px 15px -5px var(--blue-100);
+    // box-shadow: 5px 5px 5px black;
+
+    width: 95%;
+max-width: fit-content;
+    >* {
+        direction: rtl;
+
+    }
+
+    input,
+    select,
+    textarea {
+        border: none;
+        outline: none;
+        border-radius: var(--radius-200);
+        padding: 0.8rem 0.6rem;
+        width: var(--input-w400);
+        background-color: #fff;
+
+        // text-align: right;
+        &::placeholder {
+            color: var(--nutral-600);
+            font-weight: 600;
+        }
+
+        &:focus {
+            outline: 2px solid var(--blue-300);
+        }
+    }
+
+    label {
+        margin: var(--margin-500) 0 var(--margin-100) 0;
+    }
+
+    &__leftContainer,
+    &__rightContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: flex-end;
+
+
+
+    }
+
+    &__rightContainer {
+        background-color: var(--blue-100);
+        color: var(--nutral-400);
+        padding: var(--padding-200) var(--padding-100);
+        border-radius: 0 var(--radius-400) var(--radius-400) 0;
+
+        div {
+            display: flex;
+            // align-items: center;
+            // justify-content: flex-end;
+            // max-width: 50rem;
+            // width: fit-content;
+            width: var(--input-w400);
+            background-color: #fff;
+            border-radius: var(--radius-200);
+
+            >*:not(:first-child) {
+                margin-right: .2rem;
+            }
+
+            // background-color: red;
+            input {
+                // width: var(--input-w200);
+                border-radius: var(--radius-200);
+                height: 100%;
+                width: 100%;
+                direction: ltr;
+                // text-align: left;
+            }
+
+            select {
+                height: 100%;
+                border-radius: var(--radius-200);
+
+                width: fit-content;
+                padding: 0;
+
+            }
+
+            #countryCodeImg {
+                background-image: url(../icons/palestine.png);
+                background-color: #fff;
+                background-position: center;
+                background-size: 50%;
+                background-repeat: no-repeat;
+
+                min-height: 1.5rem;
+                min-width: 2rem;
+                width: 2rem;
+                display: inline-block;
+
+                border-radius: var(--radius-100);
+
+                img {
+                    display: none;
+                }
+            }
+        }
+
+
+    }
+
+    &__leftContainer,
+    &__rightContainer {
+
+        padding: var(--padding-100);
+
+        textarea {
+            width: fit-content;
+        }
+
+        &__sendMessage {
+            padding: 1rem 2rem;
+            background-color: var(--blue-100);
+            color: #fff;
+            // text-align: center;
+            text-decoration: none;
+            margin-top: var(--margin-500);
+            align-self: center;
+            border-radius: var(--radius-100);
+
+            &:hover {
+                color: var(--blue-100);
+                outline: 2px solid var(--blue-100);
+                background-color: #fff;
+            }
+
+            &:active {
+                background-color: var(--blue-100);
+                color: #fff;
+            }
+        }
+    }
+
+
+    &__leftContainer {
+        // width: 90%;
+
+
+        textarea {
+            width: 100%;
+            
+        }
+//  background-attachment: fixed;
+    }
+
+
+}
+
+
+@media screen and (max-width:660px) {
+    .contactForm {
+
+        &__rightContainer {
+            display: none;
+        }
+
+        &__leftContainer {
+            // width: 90%;
+            // // width: 100%;
+
+
+            // textarea {
+            //     width: 16rem;
+            // }
+        }
+
+    }
+}

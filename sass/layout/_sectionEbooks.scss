@@ -1,0 +1,18 @@
+.sectionEbooks {
+    direction: rtl;
+
+
+    // background-color: #fff;
+
+    &__box {
+        width: 100%;
+        display: grid;
+        grid-gap: var(--gap-200);
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        padding: 3rem;
+        place-items:center;
+        align-items:center;
+    }
+
+ 
+}

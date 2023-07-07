@@ -1,0 +1,67 @@
+@use "abstract/colors";
+@use "abstract/var";
+
+@use "base/resets";
+
+
+@use "layout/header";
+@use "layout/footer";
+
+@use "layout/section";
+@use "layout/sectionTitle";
+
+@use "layout/sectionHero";
+@use "layout/sectionTestemonials";
+@use "layout/sectionServices";
+@use "layout/sectionWorkFlow";
+@use "layout/sectionWhyUs";
+@use "layout/sectionContact";
+@use "layout/sectionFAQ";
+@use "layout/sectionPricing";
+@use "layout/sectionEbooks";
+@use "layout/sectionBlog";
+@use "layout/sectionCustomerProof";
+@use "layout/sectionVision";
+@use "layout/sectionPartners";
+
+
+@use "components/testemonialCarousel";
+@use "components/standardCard";
+@use "components/askConsultation";
+@use "components/contactForm";
+@use "components/faqComp";
+@use "components/pricingCard";
+@use "components/mailSub";
+@use "components/eBookCard";
+@use "components/postCard";
+@use "components/pagination";
+@use "components/customerProof";
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--nutral-400);
+    height: fit-content;
+    font-family: "Markazi Text", serif;
+}
+
+.content {
+    // overflow-y: scroll;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(118, 122, 128);
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+
+    // &>:not(:last-child) {
+    //     margin-right: 2rem;
+    // }
+}

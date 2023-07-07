@@ -1,0 +1,50 @@
+.sectionTitle {
+    text-align: center;
+    flex-direction: column;
+    // border-radius: var(--radius-400);
+    font-family: 'Markazi Text', serif;
+    // box-shadow: 0px 0px 15px -5px var(--blue-100);
+    // padding: var(--padding-100) var(--padding-100);
+    justify-content: center;
+    align-items: center;
+    // background-color: var(--nutral-700);
+
+
+    &>:not(:last-child) {
+        margin-bottom: var(--margin-m-100);
+    }
+
+
+    &__title {
+        color: var(--nutral-100);
+        position: relative;
+        margin-bottom: 4rem;
+
+        font-size: 3rem;
+
+        &::after {
+            content: '';
+            width: 80%;
+            height: 0.2rem;
+            background-color: var(--nutral-100);
+            position: absolute;
+            bottom: -.8rem;
+            left: 11%;
+            justify-self: center;
+            align-self: center;
+            // z-index: 8888;
+        }
+    }
+
+    &__description {
+        color: var(--nutral-200);
+        max-width: 16rem;
+        display: none;
+    }
+
+    &--description {
+        &>[class*="__description"] {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.customerProof {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-400);
+    font-family: 'Markazi Text', serif;
+    box-shadow: 0px 0px 15px -5px var(--blue-100);
+    padding: var(--padding-100) var(--padding-200);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nutral-700);
+
+    transition: transform 300ms ease-in-out;
+
+    >* {
+        direction: rtl;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: var(--blue-100);
+
+        >*,
+        >*>*>* {
+            color: #fff !important;
+            stroke: #fff !important;
+        }
+    }
+
+    font-size: 1.5rem;
+
+    label {
+        margin: var(--margin-500) 0 var(--margin-100) 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        // background-color: red;
+        color: var(--nutral-100);
+
+        &:not(:last-child) {
+            margin-bottom: var(--margin-500);
+        }
+
+
+        &>:not(:last-child) {
+            margin-left: var(--margin-300);
+        }
+
+
+        &__text span {
+            color: var(--nutral-100);
+            margin-right: var(--margin-100);
+        }
+
+
+        &__icon svg {
+            stroke: var(--nutral-200);
+        }
+    }
+
+
+}

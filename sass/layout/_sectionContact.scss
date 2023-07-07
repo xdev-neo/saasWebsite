@@ -1,0 +1,20 @@
+.sectionContact {
+    // direction: rtl;
+    padding: var(--padding-200) 0;
+    // padding: 0;
+
+
+    // background-color:#fff;
+
+    // width: 100vw;
+    &__box {
+        width: 100%;
+        display: grid;
+        grid-gap: var(--gap-200);
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        padding: 3rem;
+        place-items: center;
+        place-content: center;
+    }
+
+}

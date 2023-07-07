@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: var(--padding-100) 0;
+    width: 100%;
+
+    &>:not(:last-child) {
+        margin-bottom: var(--margin-l-200);
+    }
+
+    &--bg-white {
+        background-color: #fff;
+    }
+
+}
+
+@media screen and (max-width:490px) {
+    .section {
+
+        padding: var(--padding-100) 0;
+
+        &>:not(:last-child) {
+            margin-bottom: var(--margin-100);
+        }
+
+
+    }
+
+
+}

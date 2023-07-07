@@ -1,0 +1,284 @@
+.sectionHero {
+    height: fit-content;
+    width: 100%;
+    direction: rtl;
+    // margin: var(--margin-l-100) 0; // background-color: red;
+    // justify-content: left;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: -4rem;
+
+
+        &__illustration {
+            background: url(../imgs/saudi\ 1.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40%;
+            aspect-ratio: 1/.7;
+            // height: 50%;
+            // background-color: blue;
+            // margin-left: 16%;
+        }
+
+
+        &__infoCTA {
+            // margin-left: -10rem;
+            width: fit-content;
+            // background-color: green;
+
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            // background-color: green;
+            // margin-left: 5%;
+
+            &__title {
+                // max-width: 14rem;
+                font-size: 1.8rem;
+                font-weight: lighter;
+                color: var(--nutral-100);
+                margin-bottom: var(--margin-300);
+
+                span {
+                    // background-color: red;
+                    font-weight: 900;
+                }
+            }
+
+            &__CTABox {
+
+                &__contactBtn {
+                    background: linear-gradient(right, #5156B1, #76C8E2);
+                    padding: var(--padding-sm-300) var(--padding-m-100);
+                    border-radius: var(--radius-200);
+                    display: inline-block;
+                    color: #fff;
+                    margin-bottom: var(--margin-100);
+
+                    &:hover {
+                        background: #fff;
+                        color: var(--blue-100);
+                        outline: 2px solid var(--blue-100);
+                    }
+                }
+
+                &__extraCTA {
+                    color: var(--nutral-200);
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+                    // display: inline-block;
+                }
+            }
+
+            // &>:not(:last-child) {
+            //     margin-bottom: var(--margin-300);
+            // }
+        }
+
+    }
+
+    &--ext-illust {
+        [class*="__content"] {
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+
+            [class*="__infoCTA"] {
+
+                justify-content: center;
+                align-items: center;
+                // background-color: red;
+            }
+
+            [class*="__illustration"] {
+                // background-color: green;
+                width: fit-content;
+                background-image: none;
+            }
+        }
+
+        &-sm {
+            [class*="__content"] {
+                [class*="__title"] {
+                    // background-color: red;
+                    font-size: 4rem;
+                    font-weight: lighter;
+                    color: var(--nutral-100);
+                    margin-bottom: var(--margin-400);
+                }
+
+
+                [class*="__illustration"] {
+
+                    svg {
+                        width: var(--input-w100);
+                        height: fit-content;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &--us {
+        [class*="__content"] {
+            margin: 0;
+            max-width: 45rem;
+            justify-content: space-between;
+
+            [class*="__CTABox"] {
+                // background-color: red;
+
+                [class*="__illustration"] {
+
+                    background-color: #fff;
+                    border-radius: var(--radius-200);
+                    padding: var(--padding-100);
+                    margin-bottom: var(--margin-400);
+                    box-shadow: 0px 0px 15px -5px var(--blue-100);
+                    outline: 2px solid var(--blue-100);
+
+                    svg {
+                        width: var(--input-w300);
+                        height: fit-content;
+                    }
+                }
+
+                [class*="__contactBtn"] {
+                    background: linear-gradient(right, #5156B1, #76C8E2);
+                    padding: var(--padding-sm-300) var(--padding-m-100);
+                    border-radius: var(--radius-200);
+                    display: inline-block;
+                    color: #fff;
+                    margin-bottom: var(--margin-100);
+                    width: 100%;
+                    text-align: center;
+
+                    &:hover {
+                        background: #fff;
+                        color: var(--blue-100);
+                        outline: 2px solid var(--blue-100);
+                        box-shadow: 0px 0px 15px -5px var(--blue-100);
+                    }
+
+                }
+
+            }
+
+            [class*="__infoCTA"] {
+
+                [class*="__text"] {
+                    max-width: 25rem;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:660px) {
+    .sectionHero {
+
+
+        &__content {
+            margin-left: 0;
+
+            &__illustration {}
+
+
+            &__infoCTA {
+
+
+                &__title {
+
+                    span {}
+                }
+
+                &__CTABox {
+
+                    &__contactBtn {}
+
+                    &__extraCTA {}
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:790px) {
+    .sectionHero {
+        // background-color: red;
+        text-align: center;
+
+        &__content {
+            margin-left: 0;
+
+            &__illustration {
+                display: none;
+            }
+
+
+            &__infoCTA {
+                justify-content: center;
+                align-items: center;
+
+
+                &__title {
+
+                    span {}
+                }
+
+                &__CTABox {
+
+                    &__contactBtn {}
+
+                    &__extraCTA {}
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width:780px) {
+    .sectionHero {
+        &--us {
+            [class*="__content"] {
+                flex-direction: column;
+
+                [class*="__CTABox"] {
+                    order: 1;
+                    margin-bottom: var(--margin-800);
+                }
+
+                [class*="__infoCTA"] {
+                    align-items: center;
+                    order: 2;
+                    text-align: center;
+
+                    [class*="__text"] {
+                        // background-color: red;
+                        padding: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}

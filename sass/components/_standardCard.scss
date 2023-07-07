@@ -1,0 +1,121 @@
+.standardCard {
+
+    text-align: center;
+    flex-direction: column;
+    border-radius: var(--radius-400);
+    font-family: 'Markazi Text', serif;
+    box-shadow: 0px 0px 15px -5px var(--blue-100);
+    padding: var(--padding-100) var(--padding-100);
+    // justify-content: center;
+    // align-items: center;
+    background-color: var(--nutral-700);
+
+    min-width: fit-content;
+    max-width: fit-content;
+    // justify-self: center;
+    // align-self: center;
+    height: fit-content;
+    // place-self: center;
+    transition: transform 300ms ease-in-out;
+
+    &>:not(:last-child) {
+        margin-bottom: var(--margin-200);
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        background-color: var(--blue-100);
+        // color: #fff !important;
+
+        &>p,
+        &>h1 {
+            color: #fff !important;
+            stroke: #fff !important;
+        }
+
+        &>a {
+            outline: 2px solid #fff;
+            // color: var(--blue-100);
+        }
+    }
+
+
+    &__icon {
+        min-width: 2.6rem;
+        min-height: 2.6rem;
+        background-image: url(../../icons/user.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &__title {
+        color: var(--nutral-100)
+    }
+
+    &__text {
+        color: var(--nutral-200);
+        max-width: 16rem;
+    }
+
+    &__btnCTA {
+        padding: 1rem 2rem;
+        text-decoration: none;
+        margin-top: var(--margin-500);
+        align-self: center;
+        border-radius: var(--radius-100);
+        display: inline-block;
+        color: #fff;
+        background-color: var(--blue-100);
+        // width: fit-content;
+
+        &:hover {
+            background-color: #fff;
+            color: var(--blue-100);
+            // color: red;
+            outline: none !important;
+        }
+
+ 
+
+        display: none;
+
+        &--btn {
+            display: inline-block;
+
+        }
+    }
+
+
+    &--btn {
+        &>[class*="__btnCTA"] {
+            display: inline-block;
+        }
+    }
+
+    &--bg-white {
+        background-color: #fff;
+    }
+
+    &--bussiness {
+        background-color: var(--blue-100);
+min-width: 18rem;
+max-width: 18rem;
+max-height: 20rem;
+
+        [class*="__icon"] {
+            min-height: 10rem;
+            background-image: url(../../imgs/post_thumb.png);
+        }
+
+        [class*="__title"] {
+            color: #fff;
+        }
+
+        [class*="__text"] {
+            color: var(--nutral-600);
+            max-width: 16rem;
+        }
+
+    }
+}

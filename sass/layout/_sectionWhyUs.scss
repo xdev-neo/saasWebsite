@@ -1,0 +1,40 @@
+.sectionWhyUs {
+    direction: rtl;
+
+
+
+    &__box {
+        .standardCard {
+            background-color: #fff;
+        }
+
+        width: 100%;
+        max-width: 80rem;
+        display: grid;
+        grid-gap: var(--gap-200);
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        padding: 3rem;
+        place-content: center;
+        place-items: center;
+    }
+
+    &__btnCTA {
+        padding: 1rem 2rem;
+        text-decoration: none;
+        margin-top: var(--margin-500);
+        align-self: center;
+        border-radius: var(--radius-100);
+        // display: inline-block;
+        color: #fff;
+        background-color: var(--blue-100);
+        // width: fit-content;
+        box-shadow: 0px 0px 15px -5px var(--blue-100);
+
+        &:hover {
+            background-color: #fff;
+            color: var(--blue-100);
+            // color: red;
+            outline: none !important;
+        }
+    }
+}

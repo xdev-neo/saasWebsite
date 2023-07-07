@@ -1,0 +1,51 @@
+.askConsultation {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-400);
+    font-family: 'Markazi Text', serif;
+    box-shadow: 0px 0px 15px -5px var(--blue-100);
+    padding: var(--padding-100) var(--padding-200);
+
+    background-color: var(--blue-100);
+    color: #fff;
+    transition: transform 300ms ease-in-out;
+    
+    >* {
+        direction: rtl;
+    }
+
+    &:hover{
+        transform: scale(1.2);
+    }
+
+    font-size: 1.5rem;
+
+    label {
+        margin: var(--margin-500) 0 var(--margin-100) 0;
+    }
+
+
+    &__sendMessage {
+        padding: 1rem 2rem;
+        text-decoration: none;
+        margin-top: var(--margin-500);
+        align-self: center;
+        border-radius: var(--radius-100);
+        outline: 2px solid #fff;
+
+        color: #fff;
+        background-color: var(--blue-100);
+
+        &:hover {
+            background-color: #fff;
+            color: var(--blue-100);
+
+        }
+
+        &:active {
+            background-color: var(--blue-100);
+            color: #fff;
+        }
+    }
+
+}

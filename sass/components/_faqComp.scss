@@ -1,0 +1,139 @@
+.faqComp {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+    background-color: #fff;
+    border-radius: var(--radius-400);
+    color: var(--nutral-100);
+    padding: var(--padding-100);
+    font-family: 'Markazi Text', serif;
+    box-shadow: 0px 0px 15px -5px var(--blue-100);
+    // background-color: red;
+
+    width: 80%;
+    max-width: 50rem;
+
+    &__item {
+        background-color: inherit;
+
+        min-width: 98%;
+        max-width: 98%;
+        transition: all 100ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid var(--nutral-800);
+            transform: scale(1.05);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: var(--margin-300);
+        }
+
+        border-radius: inherit;
+
+
+        &>* {
+            border-radius: var(--radius-100);
+            padding: var(--padding-sm-300);
+            // margin-bottom: var(--margin-300);
+        }
+
+        &__head {
+            font-size: .6rem;
+            display: flex;
+            align-items: center;
+
+            &>:not(:last-child) {
+                margin: 0 0 0 var(--padding-sm-300);
+            }
+
+
+            &__icon svg {
+                cursor: pointer;
+                width: 1rem;
+                height: 1rem;
+                // background: url(../../icons/pluse.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                // position: relative;
+                stroke: var(--nutral-100);
+            }
+        }
+
+        &__body {
+            background-color: var(--nutral-800);
+            color: var(--nutral-200);
+
+
+        }
+    }
+
+
+}
+
+
+
+.hide {
+    // opacity: 0;
+    display: none;
+
+}
+
+.show {
+    animation: showAnimation 500ms forwards;
+}
+
+.hidden {
+    animation: hideAnimation 500ms forwards;
+}
+
+
+@keyframes showAnimation {
+    from {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        // padding: 0;
+        height: 0;
+
+    }
+
+    50% {
+        height: 2.5rem;
+    }
+
+    to {
+        opacity: 1;
+        display: flex;
+        visibility: visible;
+        // margin: 0;
+        height: fit-content;
+    }
+}
+
+@keyframes hideAnimation {
+
+
+    from {
+        // opacity: 1;
+        // display: flex;
+        // visibility: visible;
+        // margin: 0;
+        // height: fit-content;
+    }
+
+    to {
+
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        padding: 0;
+        height: 0;
+    }
+
+}

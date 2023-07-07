@@ -1,0 +1,9 @@
+@use "../components/btn" as *;
+
+.sectionFaq {
+
+    &__btnCTA {
+        // background-color: red;
+        @include btnCTA;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "starting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "comment": "no need for --watch option because browserSync is connect",
+    "srv_sync": "nodemon app.js",
+    "sass": "sass sass/_main.scss public/css/main.css -w",
+    "dev": "npm-run-all -l -p sass srv_sync",
+    "start": "node app.js",
+    "db_server": "mongod  --dbpath \"D:\\data\\db\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/register": "^7.18.9",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.54.3"
+  }
+}

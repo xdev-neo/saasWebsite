@@ -1,0 +1,131 @@
+.footer {
+    font-family: 'Markazi Text', serif;
+    width: 100%;
+
+    &__innerFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--padding-100) var(--padding-100);
+        direction: rtl;
+        height: fit-content;
+        background-color: var(--nutral-400);
+
+
+        &__extraLinks {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+
+            // background-color: red;
+            &__title {
+                font-size: 1rem;
+                color: var(--nutral-100);
+                position: relative;
+                margin-bottom: var(--margin-m-100);
+
+                &::after {
+                    position: absolute;
+                    content: ' ';
+                    width: 120%;
+                    height: .2rem;
+                    bottom: -1rem;
+                    left: -10%;
+                    background-color: var(--nutral-100);
+                }
+            }
+
+            &__body {
+                display: flex;
+                justify-content: flex-end;
+                // background-color: red;
+                flex-direction: column;
+
+                a {
+                    width: fit-content;
+                }
+
+                &__link {
+                    display: flex;
+
+                    &__icon {
+                        // background-color: red;
+                        width: fit-content;
+                        height: fit-content;
+                        margin: 0 var(--margin-300);
+
+                        svg {
+                            width: 1rem;
+                            height: 1rem;
+                            // stroke-width: 3rem;
+                        }
+                    }
+                }
+
+                &--left {
+                    align-items: flex-end;
+                }
+
+                &--right {
+                    align-items: flex-start;
+
+                }
+            }
+        }
+
+        &__companyInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // background-color: red;
+
+            &__weblink {
+                &__logoBox {
+                    background-image: url(../../icons/logo.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            &__text {
+                color: var(--nutral-100);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__bottomFooter {
+        text-align: center;
+        background-color: #fff;
+        color: var(--nutral-200);
+    }
+
+}
+
+
+@media screen and (max-width:640px) {
+    .footer {
+        &__innerFooter {
+            flex-direction: column;
+
+            &>:not(:last-child) {
+                margin-bottom: var(--margin-l-100);
+            }
+
+            &__companyInfo {
+                order: 1;
+            }
+
+            &__extraLinks {
+                order: 2;
+            }
+        }
+    }
+}

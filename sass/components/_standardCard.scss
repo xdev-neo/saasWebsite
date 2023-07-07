@@ -43,7 +43,7 @@
     &__icon {
         min-width: 2.6rem;
         min-height: 2.6rem;
-        background-image: url(../../icons/user.svg);
+        background-image: url(../icons/user.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -105,7 +105,7 @@ max-height: 20rem;
 
         [class*="__icon"] {
             min-height: 10rem;
-            background-image: url(../../imgs/post_thumb.png);
+            background-image: url(../imgs/post_thumb.png);
         }
 
         [class*="__title"] {

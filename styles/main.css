@@ -253,7 +253,7 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background-image: url(../../icons/logo.svg);
+  background-image: url(../icons/logo.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -331,7 +331,7 @@ button {
   color: var(--active-100) !important;
 }
 .header--blog [class*=__logoBox] {
-  background-image: url(../../icons/logo-white.svg);
+  background-image: url(../icons/logo-white.svg);
 }
 
 @media screen and (max-width: 1080px) {
@@ -699,7 +699,7 @@ button {
           flex-direction: column;
 }
 .footer__innerFooter__companyInfo__weblink__logoBox {
-  background-image: url(../../icons/logo.svg);
+  background-image: url(../icons/logo.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1043,13 +1043,14 @@ button {
   direction: rtl;
 }
 .sectionWorkFlow__box {
-  width: 100%;
   display: grid;
-  grid-gap: var(--gap-200);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 3rem;
-  place-items: center;
+  grid-gap: var(--gap-200);
+  width: 100%;
+  padding: var(--padding-100);
   place-content: center;
+  place-items: center;
+  max-width: var(--section-w200);
 }
 
 .sectionWhyUs {
@@ -1142,68 +1143,70 @@ button {
   direction: rtl;
 }
 .sectionEbooks__box {
-  width: 100%;
   display: grid;
-  grid-gap: var(--gap-200);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 3rem;
+  grid-gap: var(--gap-200);
+  width: 100%;
+  padding: var(--padding-100);
+  place-content: center;
   place-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: var(--section-w400);
 }
 
 .sectionBlog {
   direction: rtl;
 }
 .sectionBlog__box {
-  width: 100%;
   display: grid;
-  grid-gap: var(--gap-200);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 3rem;
-  place-items: center;
+  grid-gap: var(--gap-200);
+  width: 100%;
+  padding: var(--padding-100);
   place-content: center;
+  place-items: center;
+  max-width: var(--section-w400);
 }
 
 .sectionCustomerProof {
   direction: rtl;
 }
 .sectionCustomerProof__box {
-  width: 100%;
   display: grid;
-  grid-gap: var(--gap-200);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 3rem;
-  place-items: center;
-  max-width: var(--section-w100);
+  grid-gap: var(--gap-200);
+  width: 100%;
+  padding: var(--padding-100);
   place-content: center;
+  place-items: center;
+  max-width: var(--section-w200);
 }
 
 .sectionVision {
   direction: rtl;
 }
 .sectionVision__box {
-  width: 100%;
   display: grid;
-  grid-gap: var(--gap-200);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 3rem;
-  place-items: center;
+  grid-gap: var(--gap-200);
+  width: 100%;
+  padding: var(--padding-100);
   place-content: center;
+  place-items: center;
+  max-width: var(--section-w200);
 }
 
 .sectionPartners {
   direction: rtl;
 }
 .sectionPartners__box {
-  width: 100%;
   display: grid;
-  grid-gap: var(--gap-200);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  padding: 3rem;
-  place-items: center;
+  grid-gap: var(--gap-200);
+  width: 100%;
+  padding: var(--padding-100);
   place-content: center;
+  place-items: center;
+  max-width: var(--section-w200);
 }
 
 .testemonialCarousel {
@@ -1296,7 +1299,7 @@ button {
 .testemonialCarousel__list__item__img {
   width: 4rem;
   height: 4rem;
-  background-image: url(../../icons/palestine.png);
+  background-image: url(../icons/palestine.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -1519,7 +1522,7 @@ button {
 .standardCard__icon {
   min-width: 2.6rem;
   min-height: 2.6rem;
-  background-image: url(../../icons/user.svg);
+  background-image: url(../icons/user.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1565,7 +1568,7 @@ button {
 }
 .standardCard--bussiness [class*=__icon] {
   min-height: 10rem;
-  background-image: url(../../imgs/post_thumb.png);
+  background-image: url(../imgs/post_thumb.png);
 }
 .standardCard--bussiness [class*=__title] {
   color: #fff;

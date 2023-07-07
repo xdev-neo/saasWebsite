@@ -5,13 +5,15 @@
     // background-color: #fff;
 
     &__box {
-        width: 100%;
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         grid-gap: var(--gap-200);
-        grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
-        padding: 3rem;
-        place-items: center;
+        width: 100%;
+        padding: var(--padding-100);
         place-content: center;
+        place-items: center;
+
+        max-width: var(--section-w200);
     }
 
 }
